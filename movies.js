@@ -73,7 +73,7 @@ function WhatMovie(){
                         console.log("");                                                 
                         
                         console.log("Country & Language:")
-                        console.log(obj.Country + "," + obj.Language);
+                        console.log(obj.Country + ", " + obj.Language);
                         console.log("");   
 
                     }

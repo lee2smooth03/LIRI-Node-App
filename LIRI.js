@@ -10,7 +10,7 @@
 
 // var rqt = require('request'); //request
 // var twt = require('twitter'); //twitter
-var spy = require('spotify'); //spotify
+// var spy = require('spotify'); //spotify
 var inq = require('inquirer');//inquire (to make the app dope)
 
 /* let's grab the keys from the hidden file and
@@ -19,6 +19,7 @@ var inq = require('inquirer');//inquire (to make the app dope)
 // var twtKeys = require("./keys");
 var tweets = require("./tweets");
 var movies = require("./movies");
+var songs = require("./spotify");
 
 // var userAct; it makes more sense to define the userAct 
 
@@ -57,7 +58,8 @@ inq.prompt([
 
             case "Spotify This Song:":
                 console.log("")
-                console.log("Doo Wop/That Thing")
+                var userAct = new songs()
+                userAct.songGrab()
                 break;
 
             case "Remember This Movie:":
